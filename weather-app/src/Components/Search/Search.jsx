@@ -8,7 +8,7 @@ export default function Search({ onSearchChange }) {
   const loadOptions = async (inputValue) => {
     try {
       const response = await fetch(
-        `${GEO_API_URL}/cities?&namePrefix=${inputValue}`,
+        `${GEO_API_URL}/cities?namePrefix=${inputValue}`,
         geoApiOptions
       );
       const result = await response.json();
@@ -16,7 +16,7 @@ export default function Search({ onSearchChange }) {
         options: result.data.map((city) => {
           return {
             value: `${city.latitude} ${city.longitude}`,
-            label: `${city.name}`,
+            label: `${city.name}, ${city.countryCode}`,
           };
         }),
       };

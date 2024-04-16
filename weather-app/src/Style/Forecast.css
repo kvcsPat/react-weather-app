@@ -42,8 +42,13 @@
   cursor: inherit;
 }
 
-.min-max {
+.daily-temp {
+  padding-right: 0.5rem;
   color: #757575;
+}
+
+.accordion__button[aria-expanded="true"] .material-icons {
+  transform: rotate(180deg);
 }
 
 .daily-details-grid {

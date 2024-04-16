@@ -41,15 +41,27 @@ export default function Forecast({ data }) {
                   <label className="description">
                     {item.weather[0].description}
                   </label>
-                  <label className="min-max">
-                    {Math.round(item.main.temp_min)}°C /{" "}
-                    {Math.round(item.main.temp_max)}°C
+                  <label className="daily-temp">
+                    {Math.round(item.main.temp)}°C
                   </label>
+                  <span className="material-icons">arrow_drop_down</span>
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
               <div className="daily-details-grid">
+                <div className="daily-details-grid-item">
+                  <label className="daily-details-item-label">Min</label>
+                  <label htmlFor="" className="daily-details-item-value">
+                    {Math.round(item.main.temp_min)}°C
+                  </label>
+                </div>
+                <div className="daily-details-grid-item">
+                  <label className="daily-details-item-label">Max</label>
+                  <label htmlFor="" className="daily-details-item-value">
+                    {Math.round(item.main.temp_max)}°C
+                  </label>
+                </div>
                 <div className="daily-details-grid-item">
                   <label className="daily-details-item-label">Feels like</label>
                   <label htmlFor="" className="daily-details-item-value">

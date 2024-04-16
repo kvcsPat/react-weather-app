@@ -32,7 +32,6 @@ export default function Search({ onSearchChange }) {
 
   return (
     <AsyncPaginate
-      isClearable
       debounceTimeout={1300}
       placeholder="Search for city"
       value={search}

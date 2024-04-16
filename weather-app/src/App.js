@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Home from "./Components/Home";
 import Search from "./Components/Search";
 import CurrentWeather from "./Components/CurrentWeather";
 import Forecast from "./Components/Forecast";
@@ -34,7 +35,7 @@ function App() {
   return (
     <div className="container">
       <Search onSearchChange={handleOnSearchChange} />
-      {currentWeather && <CurrentWeather data={currentWeather} />}
+      {currentWeather ? <CurrentWeather data={currentWeather} /> : <Home />}
       {forecast && <Forecast data={forecast} />}
     </div>
   );

@@ -37,7 +37,7 @@ export default function Main() {
             <div className="used-api">
               <a
                 className="btn-api"
-                href="https://openweathermap.org/apis"
+                href="https://openweathermap.org/api"
                 target="_blank"
                 rel="noreferrer"
               >

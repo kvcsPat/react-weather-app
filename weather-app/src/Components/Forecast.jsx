@@ -34,7 +34,7 @@ export default function Forecast({ data }) {
                 <div className="daily-item">
                   <img
                     className="weather-icon-small"
-                    src={`icons/${item.weather[0].icon}.png`}
+                    src={`./react-weather-app/icons/${item.weather[0].icon}.png`}
                     alt="weather"
                   />
                   <label className="day">{forecastDays[idx]}</label>
@@ -95,7 +95,7 @@ export default function Forecast({ data }) {
                 <div className="daily-details-grid-item">
                   <label className="daily-details-item-label">Sea level</label>
                   <label htmlFor="" className="daily-details-item-value">
-                    {item.main.sea_level} m
+                    {item.main.sea_level / 10} m
                   </label>
                 </div>
               </div>

@@ -28,7 +28,7 @@ export default function Main() {
               >
                 <img
                   className="api-icon"
-                  src="/icons/geodb-cities-icon.png"
+                  src="./react-weather-app/icons/geodb-cities-icon.png"
                   alt="geoDB Cities"
                 />
                 <label className="api-label">GeoDB Cities</label>
@@ -43,7 +43,7 @@ export default function Main() {
               >
                 <img
                   className="api-icon"
-                  src="/icons/open-weather-icon.png"
+                  src="./react-weather-app/icons/open-weather-icon.png"
                   alt="Open Weather"
                 />
                 <label className="api-label">OpenWeather</label>

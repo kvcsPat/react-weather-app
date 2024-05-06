@@ -11,7 +11,7 @@ export default function CurrentWeather({ data }) {
         </div>
         <img
           className="weather-icon"
-          src={`icons/${data.weather[0].icon}.png`}
+          src={`./react-weather-app/icons/${data.weather[0].icon}.png`}
           alt="weather"
         />
       </div>

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this app the user can search locations by city name and observse the current weather with a 7 days forecast.
+In this app the user can search locations by city name and observe the current weather with a 7 days forecast.
 The app is developed using ReactJS and utilizes the [OpenWeather API](https://openweathermap.org/api) for the weather
 and the [GeoDB Cities API](https://rapidapi.com/wirefreethought/api/geodb-cities) for the autocomplete feature.
 
